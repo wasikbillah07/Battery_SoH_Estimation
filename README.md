@@ -84,7 +84,7 @@ Four models are trained and compared:
 | Gradient Boosting | 3.1410 |
 | Linear Regression | 4.7126 |
 
-The RMSE values far exceed the valid SoH range of 0–1, indicating a data quality problem. Several low-temperature batteries (B0049–B0056) contain anomalous capacity readings in early cycles. When SoH is computed as capacity divided by the first cycle's capacity, a low first-cycle reading produces SoH values far above 1.0 for subsequent cycles, corrupting the model training and evaluation.
+The RMSE values far exceed the valid SoH range of 0–1, indicating a data quality problem. Several low-temperature batteries (B0049–B0056) contain anomalous capacity readings in early cycles. 
 
 **This highlights a real challenge in battery ML:** cross-condition generalisation requires robust data preprocessing and outlier filtering before model training. Random Forest is most resilient to these outliers due to its averaging mechanism, which partially suppresses the effect of extreme values.
 
@@ -101,7 +101,7 @@ MyDrive/Research/Kaggle_Battery_Dataset/archive/cleaned_dataset/
 ```
 
 ### Step 2 — Open in Colab
-Upload the notebook to Google Colab or open directly from GitHub.
+Upload the notebook to Google Colab.
 
 ### Step 3 — Mount Drive and run
 Run Cell 2 to mount Google Drive, then run all cells in order.
