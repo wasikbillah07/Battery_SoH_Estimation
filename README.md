@@ -8,15 +8,6 @@ Benchmarking ensemble ML methods (XGBoost, Random Forest, Gradient Boosting, Lin
 This project benchmarks four machine learning models for estimating the **State-of-Health (SoH)** of lithium-ion batteries using cycling data from the NASA Battery Dataset. 
 ---
 
-## Research Questions
-
-1. Which ensemble ML method best estimates battery SoH from non-invasive discharge measurements?
-2. Does a linear model capture degradation trends as well as more complex ensemble methods?
-3. How do data quality issues (anomalous capacity readings) affect model performance when training across batteries tested under different conditions?
-4. Does model performance change after filtering invalid SoH values from cross-condition data?
-
----
-
 ## Dataset
 
 **NASA Battery Dataset** — Kaggle cleaned version  
