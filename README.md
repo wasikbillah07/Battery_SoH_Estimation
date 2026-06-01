@@ -1,11 +1,14 @@
 # Battery SoH Estimation
 Benchmarking ensemble ML methods (XGBoost, Random Forest, Gradient Boosting, Linear Regression) for lithium-ion battery State-of-Health estimation using the NASA Battery Dataset. Built as part of self-directed study in battery systems research.
 
+> **Note:** The notebook cannot be rendered directly on GitHub due to a known compatibility issue. To view the notebook, open it in [Google Colab](https://colab.research.google.com).
+
 ---
 
 ## Overview
 
 This project benchmarks four machine learning models for estimating the **State-of-Health (SoH)** of lithium-ion batteries using cycling data from the NASA Battery Dataset. 
+
 ---
 
 ## Dataset
