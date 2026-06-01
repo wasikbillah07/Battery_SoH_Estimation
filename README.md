@@ -106,32 +106,13 @@ Upload the notebook to Google Colab.
 ### Step 3 — Mount Drive and run
 Run Cell 2 to mount Google Drive, then run all cells in order.
 
-## Project Structure
-
-```
-battery-soh-estimation/
-│
-├── Battery_SoH_Estimation.ipynb   # Main notebook
-├── README.md                      # This file
-│
-└── outputs/
-    ├── soh_predictions.png        # Predicted vs actual SoH for all 4 models
-    ├── feature_importance.png     # XGBoost feature importance plot
-    └── degradation_curve.png      # SoH degradation curve for one battery
-```
-
----
-
-## Background and Motivation
-
-Battery State-of-Health estimation is a core function of the Battery Management System (BMS) in electric vehicles and grid-scale energy storage systems. Accurate SoH estimation enables:
+## Real-life implications
 
 - Informed battery replacement decisions
 - Adaptive cell balancing strategies
 - Degradation-aware charge/discharge control
-- Second-life battery grading for repurposing
 
-Physics-based models (such as the Doyle-Fuller-Newman model) provide accurate SoH estimates but are computationally expensive for real-time BMS applications. Data-driven ML approaches can approximate these models at much lower cost, provided the features are chosen to reflect the underlying physical degradation processes.
+Physics-based models (such as the Doyle-Fuller-Newman model) provide accurate SoH estimates but are computationally expensive. Data-driven ML approaches can approximate these models at much lower cost, provided the features are chosen to reflect the underlying physical degradation processes.
 
 This project investigates whether simple ensemble ML models, when given physically meaningful features, can produce reliable SoH estimates — and where their limitations lie when operating conditions vary across batteries.
 
@@ -141,8 +122,7 @@ This project investigates whether simple ensemble ML models, when given physical
 
 - **Data cleaning:** Outlier SoH values from anomalous capacity readings in low-temperature batteries must be filtered before cross-condition training
 - **Feature extension:** Adding impedance-based features (Re, Rct from EIS measurements) available in the dataset could improve accuracy
-- **Physics-informed methods:** Benchmarking against Physics-Informed Neural Networks (PINNs) would quantify what is gained by embedding physical constraints into the model
-- **Cross-condition generalisation:** Train on room-temperature batteries, test on low-temperature batteries — a more realistic deployment scenario
+- **Physics-informed methods:** Benchmarking against Physics-Informed Neural Networks (PINNs) 
 
 ---
 
@@ -157,5 +137,3 @@ wasikbillah07@gmail.com
 ## References
 
 1. B. Saha and K. Goebel (2007). *Battery Data Set*, NASA Prognostics Data Repository, NASA Ames Research Center.
-2. B. Bole, C. Kulkarni, and M. Daigle (2014). *Adaptation of an Electrochemistry-based Li-Ion Battery Model to Account for Deterioration Observed Under Randomized Use*, Annual Conference of the PHM Society.
-3. Plett, G.L. (2015). *Battery Management Systems, Vol. 1: Battery Modeling*. Artech House.
