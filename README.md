@@ -33,8 +33,6 @@ Batteries | Temperature |
 | B0033–B0040 | 24°C / 44°C |
 | B0041–B0056 | 4°C |
 
-Each battery was cycled until end-of-life (30% capacity fade from 2.0 Ah to 1.4 Ah).
-
 ---
 
 ## Features
