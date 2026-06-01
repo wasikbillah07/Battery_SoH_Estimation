@@ -106,14 +106,6 @@ Upload the notebook to Google Colab.
 ### Step 3 — Mount Drive and run
 Run Cell 2 to mount Google Drive, then run all cells in order.
 
-### Dependencies
-```
-pip install pandas numpy matplotlib scikit-learn xgboost
-```
-All other dependencies are pre-installed in Google Colab.
-
----
-
 ## Project Structure
 
 ```
