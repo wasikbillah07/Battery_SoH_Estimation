@@ -25,13 +25,13 @@ Kaggle: [patrickfleith/nasa-battery-dataset](https://www.kaggle.com/datasets/pat
 
 The dataset contains lithium-ion batteries cycled through charge, discharge, and impedance profiles under varying conditions:
 
-| Group | Batteries | Temperature |
-|---|---|---|
-| Standard benchmark | B0005, B0006, B0007, B0018 | Room temperature (24°C) |
-| Square wave discharge | B0025–B0028 | 24°C |
-| Elevated temperature | B0029–B0032 | 43°C |
-| Mixed conditions | B0033–B0040 | 24°C / 44°C |
-| Low temperature | B0041–B0056 | 4°C |
+Batteries | Temperature |
+|---|---|
+| B0005, B0006, B0007, B0018 | Room temperature (24°C) |
+| B0025–B0028 | 24°C |
+| B0029–B0032 | 43°C |
+| B0033–B0040 | 24°C / 44°C |
+| B0041–B0056 | 4°C |
 
 Each battery was cycled until end-of-life (30% capacity fade from 2.0 Ah to 1.4 Ah).
 
