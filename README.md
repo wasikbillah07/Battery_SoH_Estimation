@@ -161,36 +161,12 @@ Upload the notebook to Google Colab or open directly from GitHub.
 **Step 3 — Mount Drive and run**  
 Run Cell 2 to mount Google Drive, then run all cells in order.
 
-**Dependencies**
-```
-pip install pandas numpy matplotlib scikit-learn xgboost
-```
-All other dependencies are pre-installed in Google Colab.
-
----
-
 ## Limitations and Future Work
 
 - **Cross-battery generalisation:** The current split trains and tests on the same batteries at different cycle points. A stricter evaluation would train on some batteries entirely and test on completely unseen batteries — a more realistic deployment scenario that this project has not yet attempted.
 - **Feature extension:** Adding impedance-based features (Re, Rct from EIS measurements) already available in the dataset could improve accuracy and capture resistance growth more directly.
-- **Physics-informed methods:** Benchmarking against Physics-Informed Neural Networks (PINNs) would quantify what is gained by embedding physical degradation equations into the model architecture — connecting this data-driven approach to the physics-based modelling direction in current battery research.
+- **Physics-informed methods:** Benchmarking against Physics-Informed Neural Networks (PINNs).
 - **Data cleaning pipeline:** A systematic outlier detection method (rather than a fixed SoH threshold) would be more robust for production use.
-
----
-
-## Project Structure
-
-```
-battery-soh-estimation/
-│
-├── Battery_SoH_Estimation.ipynb   # Main notebook (3 experiments)
-├── README.md                      # This file
-│
-└── outputs/
-    ├── soh_predictions.png        # Predicted vs actual SoH for all 4 models
-    ├── feature_importance.png     # Best model feature importance plot
-    └── degradation_curve.png      # SoH degradation curve for one battery
-```
 
 ---
 
@@ -205,5 +181,3 @@ wasikbillah07@gmail.com
 ## References
 
 1. B. Saha and K. Goebel (2007). *Battery Data Set*, NASA Prognostics Data Repository, NASA Ames Research Center, Moffett Field, CA.
-2. B. Bole, C. Kulkarni, and M. Daigle (2014). *Adaptation of an Electrochemistry-based Li-Ion Battery Model to Account for Deterioration Observed Under Randomized Use*, Annual Conference of the PHM Society.
-3. Plett, G.L. (2015). *Battery Management Systems, Vol. 1: Battery Modeling*. Artech House.
